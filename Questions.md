@@ -2,19 +2,20 @@
 Réponse: c'est un environnement de dev préconfiguré donc pas d'installation en local + démarrage rapide dans le cloud 
 
 # Q2 : Quels sont les défauts de Gitpod ?
-Réponse: nécessite une connexion stable + c'est pas gratuit + accès limité au matériel local
-
+Réponse: nécessite une connexion stable + c'est pas gratuit 
 # Q3 : Quelle est la taille du fichier jar `api-springboot-0.0.1-SNAPSHOT.jar` ?
-Réponse:
+Réponse: 20672574 octets 
 
 # Q4 : Qu'est ce que  la RSS ?
-Réponse:
+Réponse: C'est la quantité de mémoire physique occupé par un processus
 
 # Q5 : Quelle est la valeur de la RSS utilisée par l'api SpringBoot (Préciser l'unité)?
-Réponse:
+Réponse:  ps -e -o pid,rss,args | grep api-springboot
+  16740 178364 java -jar api-springboot/target/api-springboot-0.0.1-SNAPSHOT.jar
+  19203  2432 grep api-springboot donc la valeur de la rss utilisé est : 178364 kilo-octets
 
 # Q6 : Quel est le temps de démarrage l'api SpringBoot ?
-Réponse:
+Réponse: Completed initialization in 2 ms 
 
 # Q7 : Quelle est la taille du fichier jar `quarkus-run.jar` ?
 Réponse:
